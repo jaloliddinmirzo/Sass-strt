@@ -1,0 +1,8 @@
+{
+    "terminal.explorerKind": "integrated",
+    "terminal.integrated.allowChords": false,
+    "terminal.integrated.automationProfile.windows": {
+    
+    },
+    "terminal.integrated.confirmOnKill": "panel"
+}

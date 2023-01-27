@@ -1,0 +1,23 @@
+// This file contains all application-wide Sass mixins.
+//conteiner
+ @mixin conteiner(){
+    width: min(100%,1110px);
+    margin: 0 auto;
+ }
+@mixin responsive($max-width) {
+    @if $max-width == destkop{
+        @media (max-width:1200px){ @content}
+    };
+    @if $max-width == tablet{
+        @media (max-width:992px ){ @content}
+    };
+    @if $max-width == mobilniy{
+        @media (max-width:768px){ @content}
+    };
+    @if $max-width == medum{
+        @media (max-width:576px){ @content}
+    };
+}
+@mixin bcg() {
+    background-image: url(../imgs/jpg/Group\ 64\ Copy\ \(1\).jpg);
+}

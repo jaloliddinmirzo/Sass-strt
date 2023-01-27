@@ -5,14 +5,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
-    <title>9D Glasses</title>
+    <link rel="stylesheet" href="./sass/main.css">
+    <title>Designo</title>
 </head>
 
 <body>
-   
-    <script src="./app.js"></script>
-
-</body>
-
+    <!-- HEADER -->
+    <header class="header">
+        
+        <nav class="sitenav header-nav">
+            <a href="#" class="site-logo">
+                <img src="./imgs/svg/site-logo.svg" alt="header-logo" class="header-logo" ></img>
+            </a>
+            <ul class="header__list">
+                <li class="header__item "><a href="#" class="header__link">OUR COMPANY</a></li>
+                <li class="header__item"><a href="#" class="header__link">LOCATIONS</a></li>
+                <li class="header__item"><a href="#" class="header__link">CONTACT</a></li>
+            </ul>
+            <button class="burger__btn">
+                <img src="./imgs/svg/burger.svg" alt="img" class="burger-img">
+            </button>
+        </nav>
+        <!-- Menyu bar -->
+        <section class="menyu__bar menyu__togle">
+            <div class="wrap">
+                <a href="#" class="menyu-link">
+                    <img src="./imgs/svg/site-logo.svg" alt="header-logo" class="header-logo" ></img>
+                </a>
+                <button class="header__close">
+                    <img src="./imgs/svg/close.svg" alt="charset">
+                </button>
+            </div>
+            <ul class="bar__list">
+                <li class="header__item "><a href="#" class=" bar__text">OUR COMPANY</a></li>
+                <li class="header__item"><a href="#" class=" bar__text">LOCATIONS</a></li>
+                <li class="header__item"><a href="#" class=" bar__text">CONTACT</a></li>
+            </ul>
+        </section>
+    </header>
+        <!-- HEADER END -->
+           <!-- INTRO -->
+           <section class="intro">
+                <ul class="intro__list">
+                <li class="intro__content">
+                   <h1 class="intro__title">Award-winning custom designs and digital branding solutions</h1>
+                </li>
+                <li class="intro__content">
+                    <p class="intro__text">With over 10 years in the industry, we are experienced in creating fully responsive websites, app design, and engaging brand experiences. Find out more about our services.</p>
+                </li>
+                <li class="intro__content">
+                    <button class="header__button intro__button">
+                        Learn More
+                    </button>
+                </li>
+                </ul>
+        </section>
+        <!-- MENYU BAR -->
+       
+        <!-- INTRO END -->
+        <script src="./app.js"></script>
+        
+    </body>
+    
 </html>
