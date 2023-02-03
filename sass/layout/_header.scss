@@ -1,3 +1,65 @@
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the header of the site/application.
-// -----------------------------------------------------------------------------
+.header {
+    @include conteiner();
+    padding: 11.8rem  2.4rem 0;
+    margin-bottom: 7.1rem;
+    ul{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        @include responsive(mobilniy){
+            flex-wrap: wrap;
+        }
+        @include responsive(medium){
+            text-align: center;
+        }
+        h1{
+            width: min(100%, 445px);
+            margin-bottom: 2.5rem;
+            @include responsive(medium){
+                font-size: 4rem;
+            }
+        }
+        .header__item{
+            width: min(100%, 530px);
+        }
+        .header__grid{
+            width: min(100%, 530px);
+            display: grid;
+            gap: 1.6rem;
+            grid-template-columns: repeat(auto-fit, minax(400px,1fr));
+        }
+        .header__title1{
+            display: flex;
+            justify-self: flex-start;
+        }
+        .header__title2{
+            display: flex;
+            justify-self: center;
+        }
+        p{
+            width: min(100%, 445px);
+            color: $secondary-color;
+            font-size: 1.7rem;
+            line-height: 1.3;
+        }
+        .header__img{
+            display: flex;
+        }
+        h4{
+            display: flex;
+            justify-self: flex-end;
+            gap: 8px;
+            width: min(100%, 445px);
+            background-color: $light-bg-color;
+            padding: 2rem 7rem 2rem 3.2rem;  
+            border-radius: 8px;
+            letter-spacing: -0.5px;
+            font-size: 1.7rem;
+            @include responsive(medium){
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+}

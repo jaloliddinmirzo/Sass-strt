@@ -20,7 +20,7 @@ body{
     height: 100%;
     display: flex;
     flex-direction: column;
-    background-color: $white-color;
+    background-color: $white-bg-color;
 }
 a{
     text-decoration: none;
@@ -45,5 +45,5 @@ ul{
     list-style: none ;
 }
 main{
-    flex-grow: 1;
+    flex-grow: 1fr;
 }

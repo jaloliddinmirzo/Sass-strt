@@ -1,3 +1,46 @@
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the footer of the site/application.
-// -----------------------------------------------------------------------------
+.footer {
+    .footer__list {
+        @include conteiner();
+        padding: 0rem  2.4rem ;
+        color: $white-color;
+        display: flex;
+        gap: 3rem;
+        height: 296px;
+        align-items: flex-end;
+        @include responsive(mobilniy){
+            flex-wrap: wrap;
+        }
+    }
+    .footer__item {
+        display: flex;
+        flex-direction: column;
+        width: min(100%, 350px);
+        padding: 4rem 3.2rem 3.5rem 3.2rem;
+        background-color:$primary-color;
+        border-radius: 8px;
+    }
+    h4{
+        color: $white-color;
+    }
+    .footer__item1{
+        align-self: start;
+    }
+    .footer__item2{
+        align-self: center;
+    }
+    .footer__name {
+        display: flex;
+        gap: 3.1rem;
+        flex-direction: column;
+    }
+    .footer__wrap {
+    }
+    .footer__wrap__list {
+        display: flex;
+        gap: 2.3rem;
+        
+    }
+    .footer__text {
+        color: $secondary-light-color
+    }
+}
