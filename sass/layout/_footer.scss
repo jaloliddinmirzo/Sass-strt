@@ -9,6 +9,7 @@
         align-items: flex-end;
         @include responsive(mobilniy){
             flex-wrap: wrap;
+            justify-content: center;
         }
     }
     .footer__item {
@@ -32,8 +33,6 @@
         display: flex;
         gap: 3.1rem;
         flex-direction: column;
-    }
-    .footer__wrap {
     }
     .footer__wrap__list {
         display: flex;

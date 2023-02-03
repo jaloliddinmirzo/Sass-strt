@@ -93,7 +93,9 @@ h1 {
 }
 @media (max-width: 1000px) {
   .header ul {
+    text-align: center;
     flex-wrap: wrap;
+    justify-content: center;
   }
 }
 @media (max-width: 576px) {
@@ -123,6 +125,11 @@ h1 {
   display: flex;
   justify-self: flex-start;
 }
+@media (max-width: 1000px) {
+  .header ul .header__title1 {
+    justify-self: center;
+  }
+}
 .header ul .header__title2 {
   display: flex;
   justify-self: center;
@@ -147,6 +154,11 @@ h1 {
   letter-spacing: -0.5px;
   font-size: 1.7rem;
 }
+@media (max-width: 1000px) {
+  .header ul h4 {
+    justify-self: center;
+  }
+}
 @media (max-width: 576px) {
   .header ul h4 {
     display: flex;
@@ -168,6 +180,7 @@ h1 {
 @media (max-width: 1000px) {
   .footer .footer__list {
     flex-wrap: wrap;
+    justify-content: center;
   }
 }
 .footer .footer__item {
